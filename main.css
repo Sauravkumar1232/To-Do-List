@@ -1,0 +1,126 @@
+:root {
+    --dark: #374151
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira sans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(70, 70, 52);
+    color: rgb(58, 29, 29);
+    background-image: "C:\Users\Gaurav\Desktop\todo.jpg";
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: darkgray;
+    margin-bottom: 1rem;
+    font-family:fantasy;
+}
+
+#new-task-from {
+    display: flex;
+}
+
+input,
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-task-input {
+    flex: 1 1 0%;
+
+    background-color: darkslategray;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: rgb(215, 86, 86);
+    font-size: 1.25rem;
+}
+
+#new-task-input::placeholder {
+    color: rgb(130, 163, 189);
+
+
+}
+
+/* #new-task-submit{
+    color: pink;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right,(rgb(0, 0, 0)),(purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+
+main {
+    flex: 1 1 0%;
+    /* padding: 2rem 1rem; */
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list {
+    padding: 1rem;
+}
+
+.task-h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgb(32, 46, 48);
+    margin-bottom: 1rem;
+}
+
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(98, 77, 109);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#tasks .task .content .text {
+    color: lightblue;
+    font-size: 1.125rem;
+    width: 100%;
+    flex:1 1 0%;
+    display: block;
+    transition: 0.4s;
+}
+
+#tasks .task .content .text:not(:read-only){
+    color: rgb(165, 165, 243);
+}
+
+#tasks .task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem ;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+    color: aqua;
+}
