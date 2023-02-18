@@ -29,7 +29,7 @@ header h1 {
     font-weight: 300;
     color: darkgray;
     margin-bottom: 1rem;
-    font-family:fantasy;
+    font-family: fantasy;
 }
 
 #new-task-from {
@@ -101,23 +101,23 @@ main {
     color: lightblue;
     font-size: 1.125rem;
     width: 100%;
-    flex:1 1 0%;
+    flex: 1 1 0%;
     display: block;
     transition: 0.4s;
 }
 
-#tasks .task .content .text:not(:read-only){
+#tasks .task .content .text:not(:read-only) {
     color: rgb(165, 165, 243);
 }
 
-#tasks .task .actions{
+#tasks .task .actions {
     display: flex;
     margin: 0 -0.5rem;
 }
 
-.task .actions button{
+.task .actions button {
     cursor: pointer;
-    margin: 0 0.5rem ;
+    margin: 0 0.5rem;
     font-size: 1.125rem;
     font-weight: 700;
     text-transform: uppercase;
